@@ -16,14 +16,13 @@ script {
 }
 /*Maingrid*/
 
-.maingrid h5,
-p {
-  color: lightgrey;
+.maingrid h1, p {
+  color: white;
 }
 
 .maingrid img {
-  width: 200px;
-  height: 130px;
+  width: auto;
+  max-height: 65%;
 }
 #content3 img {
   width: 300px;
@@ -34,6 +33,76 @@ p {
   font-size: 20px;
   margin-left: 7rem;
   margin-top: -2rem;
+}
+/* grid */
+.maingrid {
+  background-color: rgb(87, 16, 16);
+  height: 95vh;
+}
+
+.maingrid .container {
+  width: 75vw;
+  padding-top: 20px;
+  display: grid;
+  height: 95vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "title content1 content2 "
+    "title content3 content3"
+    "content4 content5 content6";
+}
+
+#title {
+  grid-area: title;
+  height: fit-content;
+  overflow: visible;
+}
+
+.p-front {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.title {
+  height: auto;
+  text-align: center;
+  background-color: rgb(87, 16, 16);
+  /* margin: 10px; */
+}
+
+.box {
+  color: white;
+  background-color: darkslategray;
+  font-size: 20px;
+  position: relative;
+}
+
+#content1 {
+  /* background-size: cover; */
+  grid-area: content1;
+}
+
+#content2 {
+  grid-area: content2;
+}
+
+#content3 {
+  grid-area: content3;
+}
+
+#content4 {
+  grid-area: content4;
+}
+
+#content5 {
+  grid-area: content5;
+}
+
+#content6 {
+  grid-area: content6;
 }
 
 /* flip card */
@@ -60,6 +129,7 @@ body {
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  transform-origin: rotate(180deg);
 }
 
 .flip-card-front,
@@ -72,12 +142,12 @@ body {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: rgb(87, 16, 16);
   color: black;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: black;
   color: white;
   transform: rotateY(180deg);
 }
