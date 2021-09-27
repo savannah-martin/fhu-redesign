@@ -16,12 +16,13 @@ script{
 }
 
 /*Middle-left*/
-.middle-left{
+.grid{
     color:rgb(224, 221, 221);
     padding: 7rem;
 }
-.middle-left h1{
+.grid h1{
     padding: 3rem;
+    font-size: 60px;
 
 }
-/*Middle-grid*/
+
