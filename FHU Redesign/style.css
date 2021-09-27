@@ -14,5 +14,23 @@ title{
 script{
     display: none;
 }
+/*Maingrid*/
 
+.maingrid h5,p{
+    color: lightgrey;
+}
 
+.maingrid img{
+    width: 200px;
+    height: 130px;
+}
+#content3 img{
+    width: 300px;
+    height: 110px;
+}
+.content-p p{
+    color: white;
+    font-size: 20px;
+    margin-left: 7rem;
+    margin-top: -2rem;
+}
