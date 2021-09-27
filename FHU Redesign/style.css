@@ -15,14 +15,4 @@ script{
     display: none;
 }
 
-/*Middle-left*/
-.grid{
-    color:rgb(224, 221, 221);
-    padding: 7rem;
-}
-.grid h1{
-    padding: 3rem;
-    font-size: 60px;
-
-}
 
