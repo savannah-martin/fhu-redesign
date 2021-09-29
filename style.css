@@ -36,7 +36,7 @@ p {
 }
 /* grid */
 .maingrid {
-  background-color: rgb(87, 16, 16);
+  background-color: rgb(161, 160, 160);
   height: 100vh;
 }
 
@@ -69,19 +69,16 @@ p {
 .title {
   height: auto;
   text-align: center;
-  background-color: rgb(87, 16, 16);
   /* margin: 10px; */
 }
 
 .box {
   color: white;
-  background-color: darkslategray;
   font-size: 20px;
   position: relative;
 }
 
 #content1 {
-  /* background-size: cover; */
   grid-area: content1;
 }
 
@@ -149,10 +146,14 @@ body {
 .flip-card-front {
   background-color: rgb(56, 56, 56);
   color: black;
+  background-size: auto;
 }
 
 .flip-card-back {
   background-color: rgb(56, 56, 56);
   color: white;
   transform: rotateY(180deg);
+}
+#content1 .flip-card-front {
+  background: url(images/Academics.jpg);
 }
