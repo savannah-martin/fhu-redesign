@@ -62,8 +62,8 @@ p {
 
 .p-front {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 15px;
+  right: 15px;
 }
 
 .title {
