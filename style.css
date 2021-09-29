@@ -135,7 +135,6 @@ body {
 
 .flip-card-front,
 .flip-card-back {
-    
   position: absolute;
   width: 100%;
   height: 100%;
@@ -146,7 +145,6 @@ body {
 .flip-card-front {
   background-color: rgb(56, 56, 56);
   color: black;
-  background-size: auto;
 }
 
 .flip-card-back {
@@ -156,4 +154,25 @@ body {
 }
 #content1 .flip-card-front {
   background: url(images/Academics.jpg);
+  background-size: cover;
+}
+#content2 .flip-card-front {
+  background: url(images/Kayak.jpg);
+  background-size: cover;
+}
+#content3 .flip-card-front {
+  background: url(images/study.png);
+  background-size: cover;
+}
+#content4 .flip-card-front {
+  background: url(images/Chapel.jpg);
+  background-size: cover;
+}
+#content5 .flip-card-front {
+  background: url(images/Family.jpg);
+  background-size: cover;
+}
+#content6 .flip-card-front {
+  background: url(images/Devo.jpg);
+  background-size: cover;
 }
