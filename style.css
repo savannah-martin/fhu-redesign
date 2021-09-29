@@ -14,9 +14,7 @@ script {
   display: none;
 }
 /*Maingrid*/
-
-.maingrid h1,
-p {
+.maingrid h1, p{
   color: rgb(80, 26, 26);
 }
 
@@ -28,12 +26,33 @@ p {
   width: 300px;
   height: 110px;
 }
-.content-p p {
+.p-front p {
   color: white;
   font-size: 20px;
-  margin-left: 7rem;
-  margin-top: -2rem;
+  position: absolute;
+  bottom: 0;
+  text-align: end;
+  padding-right: 10px;
+  z-index: 2;
 }
+
+.p-front::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.295);
+  width: 100%;
+  height: 20%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
 /* grid */
 .maingrid {
   background-color: rgb(161, 160, 160);
@@ -60,20 +79,12 @@ p {
   overflow: visible;
 }
 
-.p-front {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-}
-
 .title {
   height: auto;
   text-align: center;
-  /* margin: 10px; */
 }
 
 .box {
-  color: white;
   font-size: 20px;
   position: relative;
 }
@@ -115,7 +126,7 @@ body {
 }
 
 .flip-card p {
-  background-color: rgb(56, 56, 56);
+  width: 100%;
 }
 
 .flip-card-inner {
@@ -135,6 +146,7 @@ body {
 
 .flip-card-front,
 .flip-card-back {
+  border-radius: 5px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -144,12 +156,11 @@ body {
 
 .flip-card-front {
   background-color: rgb(56, 56, 56);
-  color: black;
 }
 
 .flip-card-back {
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: white;
+  color: black;
   transform: rotateY(180deg);
 }
 
