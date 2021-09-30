@@ -14,8 +14,9 @@ script {
   display: none;
 }
 /*Maingrid*/
-.maingrid h1, p{
-  color: rgb(80, 26, 26);
+.maingrid h1,
+p {
+  color: rgb(77, 30, 30);
 }
 
 .maingrid img {
@@ -55,7 +56,7 @@ script {
 
 /* grid */
 .maingrid {
-  background-color: rgb(161, 160, 160);
+  background-color: rgb(129, 129, 129);
   height: 100vh;
 }
 
@@ -68,8 +69,8 @@ script {
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 20px;
   grid-template-areas:
-    "title content1 content2 "
-    "title content3 content3"
+    "title title content1 "
+    "content2 content3 content3"
     "content4 content5 content6";
 }
 
@@ -154,14 +155,13 @@ body {
   backface-visibility: hidden;
 }
 
-.flip-card-front {
-  background-color: rgb(56, 56, 56);
+.flip-card-back {
+  background-color: rgb(82, 82, 82);
+  transform: rotateY(180deg);
 }
 
-.flip-card-back {
-  background-color: white;
-  color: black;
-  transform: rotateY(180deg);
+.flip-card-back p {
+  color: white;
 }
 
 #content1 .flip-card-front {
@@ -189,9 +189,6 @@ body {
   background-size: cover;
 }
 
-
-
-
 @media (max-width: 768px) {
   .maingrid .container {
     width: 75vw;
@@ -199,7 +196,7 @@ body {
     display: grid;
     height: 90vh;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7 , minmax(200px, 1fr));
+    grid-template-rows: repeat(7, minmax(200px, 1fr));
     grid-gap: 20px;
     grid-template-areas:
       "title"
@@ -210,5 +207,4 @@ body {
       "content5"
       "content6";
   }
-  
 }
