@@ -127,7 +127,7 @@ body {
 }
 
 .flip-card {
-  background-color: transparent;
+  background-color: rgb(31, 31, 31);
   width: auto;
   height: auto;
   perspective: 1000px;
