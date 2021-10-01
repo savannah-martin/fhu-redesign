@@ -222,5 +222,8 @@ body {
 .px-2{
   text-align: center;
 }
+.maingrid {
+  height: 200vh;
+}
 
 }
