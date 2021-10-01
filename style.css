@@ -5,7 +5,7 @@ background: linear-gradient(..) */
   margin: 0;
   padding: 0;
   display: block;
-  font-family: sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 title {
   display: none;
@@ -13,22 +13,18 @@ title {
 script {
   display: none;
 }
-/*Maingrid*/
-.maingrid h1{
-  color: maroon;
 
-}
-.maingrid p {
-  color: white;
-}
-
-#title h2 {
-  font-size: larger;
+/* title */
+#title h1 {
+  color: rgb(61, 0, 0);
+  font-size: 6vh;
 }
 #title p {
   font-size: larger;
+  color: rgb(0, 0, 0);
 }
 
+/*Maingrid*/
 .maingrid img {
   width: auto;
   max-height: 65%;
@@ -64,7 +60,6 @@ script {
   filter: blur(5px);
 }
 
-
 /* grid */
 .maingrid {
   background-color: rgb(129, 129, 129);
@@ -92,9 +87,8 @@ script {
   border-radius: 5px;
   width: 100%;
   height: 100%;
-  background-color: #BDBDBD;
+  background-color: #bdbdbd;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
 }
 
 .box {
@@ -222,11 +216,10 @@ body {
       "content5"
       "content6";
   }
-.px-2{
-  text-align: center;
-}
-.maingrid {
-  height: 210vh;
-}
-
+  .px-2 {
+    text-align: center;
+  }
+  .maingrid {
+    height: 210vh;
+  }
 }
