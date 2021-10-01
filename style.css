@@ -14,9 +14,12 @@ script {
   display: none;
 }
 /*Maingrid*/
-.maingrid h1,
-p {
-  color: lightgray;
+.maingrid h1{
+  color: maroon;
+
+}
+.maingrid p {
+  color: white;
 }
 
 #title h2 {
