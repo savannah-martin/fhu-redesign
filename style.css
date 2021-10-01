@@ -172,6 +172,7 @@ body {
 
 .flip-card-back p {
   color: white;
+  font-size: medium;
 }
 
 #content1 .flip-card-front {
