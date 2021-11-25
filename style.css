@@ -7,6 +7,11 @@ background: linear-gradient(..) */
   display: block;
   font-family: Helvetica, Arial, sans-serif;
 }
+
+/* notes from meeting */
+/* !make mobile work, click */
+/* resize images, better font, bigger title on back (make it heading), fix the back, */
+/* heading, smaller blurb, (muted blurb?), see more button */
 title {
   display: none;
 }
@@ -154,10 +159,10 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.flip-card:hover .flip-card-inner {
+/* .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
   transform-origin: rotate(180deg);
-}
+} */
 
 .flip-card-front,
 .flip-card-back {
@@ -175,10 +180,11 @@ body {
 
 .flip-card-front .overlay {
   position: absolute;
-  background-image: linear-gradient(rgba(255, 246, 163, 0), rgba(0, 0, 0, 0.884));
+  /* background-image: linear-gradient(rgba(255, 246, 163, 0), rgba(0, 0, 0, 0.884)); */
+  background-color: rgba(172, 135, 154, 0.466);
   border-radius: 15px;
   width: 100%;
-  height: 50%;
+  height: 25%;
   bottom: 0;
   z-index: 1;
 }
@@ -193,7 +199,6 @@ body {
   font-size: medium;
   padding: 0px 5% 0px 5%;
 }
-
 #content1 .flip-card-front {
   background: url(images/Academics.jpg);
   background-size: cover;
