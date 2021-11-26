@@ -27,14 +27,14 @@ inner1.addEventListener("click", () => {
   if (numclick1 % 2 == 0) {
     document.getElementById("inner1").style.transform = "rotateY(180deg)";
     document.getElementById("inner1").style.transformOrigin = "rotate(180deg)";
-    overlay1.style.display = "hidden";
+    overlay1.style.visibility = "hidden";
     numclick1 = numclick1 + 1;
     console.log("first click");
     console.log(numclick1);
   } else {
     document.getElementById("inner1").style.transform = "rotateY(0deg)";
     document.getElementById("inner1").style.transformOrigin = "rotate(0deg)";
-    overlay1.style.display = "visible";
+    overlay1.style.visibility = "visible";
     numclick1 = numclick1 + 1;
     console.log("second click");
   }
