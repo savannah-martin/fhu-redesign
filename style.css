@@ -108,7 +108,7 @@ span {
 #title {
     background: linear-gradient(135deg, #bdbdbd 5%, #a5a5a5 5%, #9e9e9e 15%, #bdbdbd 15%);
     /* Start #5cbcb0 from 0 and end at 5%, Start #fff at 5% and end at 15%, Start #5cbcb0 again at 15% and end at 100% */
-    background-size: 593.97px 593.97px;
+    background-size: auto;
     background-repeat: no-repeat; /* To avoid multiple instances */
 }
 
