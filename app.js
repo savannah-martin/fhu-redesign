@@ -9,6 +9,13 @@ const inner4 = document.getElementById("inner4");
 const inner5 = document.getElementById("inner5");
 const inner6 = document.getElementById("inner6");
 
+const overlay1 = document.getElementById("overlay1");
+const overlay2 = document.getElementById("overlay2");
+const overlay3 = document.getElementById("overlay3");
+const overlay4 = document.getElementById("overlay4");
+const overlay5 = document.getElementById("overlay5");
+const overlay6 = document.getElementById("overlay6");
+
 var numclick1 = 0;
 var numclick2 = 0;
 var numclick3 = 0;
@@ -18,6 +25,7 @@ var numclick6 = 0;
 
 inner1.addEventListener("click", () => {
   if (numclick1 % 2 == 0) {
+    overlay1.style.display="none";
     document.getElementById("inner1").style.transform = "rotateY(180deg)";
     document.getElementById("inner1").style.transformOrigin = "rotate(180deg)";
     numclick1 = numclick1 + 1;
