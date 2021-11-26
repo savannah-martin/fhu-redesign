@@ -25,7 +25,7 @@ var numclick6 = 0;
 
 inner1.addEventListener("click", () => {
   if (numclick1 % 2 == 0) {
-    overlay1.style.display="none";
+    overlay1.style.zIndex="-5";
     document.getElementById("inner1").style.transform = "rotateY(180deg)";
     document.getElementById("inner1").style.transformOrigin = "rotate(180deg)";
     numclick1 = numclick1 + 1;
