@@ -25,18 +25,18 @@ var numclick6 = 0;
 
 inner1.addEventListener("click", () => {
   if (numclick1 % 2 == 0) {
-    overlay1.style.zIndex="5";
     document.getElementById("inner1").style.transform = "rotateY(180deg)";
     document.getElementById("inner1").style.transformOrigin = "rotate(180deg)";
+    overlay1.style.display = "hidden";
     numclick1 = numclick1 + 1;
-    console.log("first click")
-    console.log(numclick1)
-  }
-  else {
+    console.log("first click");
+    console.log(numclick1);
+  } else {
     document.getElementById("inner1").style.transform = "rotateY(0deg)";
     document.getElementById("inner1").style.transformOrigin = "rotate(0deg)";
+    overlay1.style.display = "visible";
     numclick1 = numclick1 + 1;
-    console.log("second click")
+    console.log("second click");
   }
 });
 
@@ -45,14 +45,13 @@ inner2.addEventListener("click", () => {
     document.getElementById("inner2").style.transform = "rotateY(180deg)";
     document.getElementById("inner2").style.transformOrigin = "rotate(180deg)";
     numclick2 = numclick2 + 1;
-    console.log("first click")
-    console.log(numclick2)
-  }
-  else {
+    console.log("first click");
+    console.log(numclick2);
+  } else {
     document.getElementById("inner2").style.transform = "rotateY(0deg)";
     document.getElementById("inner2").style.transformOrigin = "rotate(0deg)";
     numclick2 = numclick2 + 1;
-    console.log("second click")
+    console.log("second click");
   }
 });
 
@@ -61,14 +60,13 @@ inner3.addEventListener("click", () => {
     document.getElementById("inner3").style.transform = "rotateY(180deg)";
     document.getElementById("inner3").style.transformOrigin = "rotate(180deg)";
     numclick3 = numclick3 + 1;
-    console.log("first click")
-    console.log(numclick3)
-  }
-  else {
+    console.log("first click");
+    console.log(numclick3);
+  } else {
     document.getElementById("inner3").style.transform = "rotateY(0deg)";
     document.getElementById("inner3").style.transformOrigin = "rotate(0deg)";
     numclick3 = numclick3 + 1;
-    console.log("second click")
+    console.log("second click");
   }
 });
 
@@ -77,14 +75,13 @@ inner4.addEventListener("click", () => {
     document.getElementById("inner4").style.transform = "rotateY(180deg)";
     document.getElementById("inner4").style.transformOrigin = "rotate(180deg)";
     numclick4 = numclick4 + 1;
-    console.log("first click")
-    console.log(numclick4)
-  }
-  else {
+    console.log("first click");
+    console.log(numclick4);
+  } else {
     document.getElementById("inner4").style.transform = "rotateY(0deg)";
     document.getElementById("inner4").style.transformOrigin = "rotate(0deg)";
     numclick4 = numclick4 + 1;
-    console.log("second click")
+    console.log("second click");
   }
 });
 
@@ -93,14 +90,13 @@ inner5.addEventListener("click", () => {
     document.getElementById("inner5").style.transform = "rotateY(180deg)";
     document.getElementById("inner5").style.transformOrigin = "rotate(180deg)";
     numclick5 = numclick5 + 1;
-    console.log("first click")
-    console.log(numclick5)
-  }
-  else {
+    console.log("first click");
+    console.log(numclick5);
+  } else {
     document.getElementById("inner5").style.transform = "rotateY(0deg)";
     document.getElementById("inner5").style.transformOrigin = "rotate(0deg)";
     numclick5 = numclick5 + 1;
-    console.log("second click")
+    console.log("second click");
   }
 });
 
@@ -109,13 +105,12 @@ inner6.addEventListener("click", () => {
     document.getElementById("inner6").style.transform = "rotateY(180deg)";
     document.getElementById("inner6").style.transformOrigin = "rotate(180deg)";
     numclick6 = numclick6 + 1;
-    console.log("first click")
-    console.log(numclick6)
-  }
-  else {
+    console.log("first click");
+    console.log(numclick6);
+  } else {
     document.getElementById("inner6").style.transform = "rotateY(0deg)";
     document.getElementById("inner6").style.transformOrigin = "rotate(0deg)";
     numclick6 = numclick6 + 1;
-    console.log("second click")
+    console.log("second click");
   }
 });
